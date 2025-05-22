@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Sufficit Json Exporter
-Plugin URI:  https://github.com/sufficit/sufficit-wordpress/sufficit-json-exporter
+Plugin URI:  https://github.com/sufficit/sufficit-wordpress/tree/main/sufficit-json-exporter
 Description: Um plugin simples para exportar todos os posts para um arquivo JSON atraves de um endpoint REST.
 Version:     1.17 // Versao com comentarios detalhados
 Author:      Hugo Castro de Deco
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * [NOTA IMPORTANTE PARA O PROGRAMA PARCEIRO DE PROGRAMACAO]:
  * Ao gerar ou modificar textos e strings em PHP ou HTML, evite o uso de acentuacao
- * ou caracteres especiais (e.g., 'ç', 'ã', 'õ') diretamente no codigo para prevenir
+ * ou caracteres especiais (e.g., 'ï¿½', 'ï¿½', 'ï¿½') diretamente no codigo para prevenir
  * problemas de codificacao em ambientes diversos. Use entidades HTML quando
  * estritamente necessario ou confie no Text Domain para traducao.
  * Manter o codigo limpo de caracteres complexos em hardcode ajuda na compatibilidade.
@@ -127,7 +127,7 @@ function sufficit_json_exporter_gerar_posts() {
         $post_excerpt = $post->post_excerpt;
 
         // Processa o titulo para decodificar entidades HTML usando o charset selecionado.
-        // Isso e crucial para garantir que caracteres especiais (e.g., &eacute; se tornem é)
+        // Isso e crucial para garantir que caracteres especiais (e.g., &eacute; se tornem ï¿½)
         // sejam exibidos corretamente no JSON de acordo com a codificacao escolhida.
         $processed_title = html_entity_decode( $post_title, ENT_QUOTES | ENT_HTML5, $output_charset );
         // Aplica filtros padrao do WordPress ao conteudo e resumo para processamento de shortcodes, etc.
