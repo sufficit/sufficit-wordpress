@@ -1,0 +1,18 @@
+{
+    "tts": {
+        "url": "https://blazor.sufficit.com.br/pages/tts",
+        "description": "Serviço de conversão de texto em fala + mixagem de músicas de fundo"
+    },
+    "audio_system": {
+        "url": "https://www.sufficit.com.br/telefonia/audio?objectid",
+        "description": "Sistema de áudio e gravações - gerenciamento e upload de arquivos"
+    },
+    "contact":{
+        "url": "https://www.sufficit.com.br/contact",
+        "description": "Formulário de contato para suporte e dúvidas"
+    },
+    "rating":{
+        "url": "https://www.sufficit.com.br/#facebookRatings",
+        "description": "Seção sobre avaliações do Facebook em tempo real"
+    }
+}
