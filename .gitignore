@@ -1,2 +1,4 @@
 config/config-openai.json
 config/config.json
+# Worktrees (padrao): arvores de trabalho em <repo>/.worktrees/
+**/.worktrees/
